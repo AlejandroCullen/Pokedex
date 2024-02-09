@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(62, 45, 78);
+  display: grid;
+  place-content: center;
+  grid-template-columns: 60%;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(38, 0, 55);
+  padding: 5px 0px;
+  border-radius: 0px 0 20px 20px;
+}
+
+header > span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > span > input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(205, 226, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header > span > img {
+  width: 50px;
+  background-color: white;
+  border-radius: 100%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+header > span > img:hover {
+  transform: rotate(388deg);
+}
+
+.buttonFunc {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttonFunc > button {
+  padding: 8px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(38, 0, 55);
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.buttonFunc > button:hover {
+  background-color: rgb(58, 34, 69);
+}
+
+.buttonFunc > select {
+  width: 40%;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.pokecont {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cardPoke {
+  width: 250px;
+  height: 350px;
+  margin-top: 30px;
+  background: linear-gradient(40deg, rgb(32, 0, 25), rgb(25, 31, 51), rgb(0, 0, 42));
+  display: grid;
+  grid-template-rows: 200px 30px 40px 60px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 2px rgb(38, 0, 55);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardPoke:hover {
+  transform: scale(0.9);
+  box-shadow: 2px 2px 10px 2px #1E90FF;
+}
+
+.cardPoke > img {
+  margin-top: 10px;
+  width: 180px;
+  justify-self: center;
+  background-color: rgba(46, 0, 92, 0.393);
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px 2px rgba(46, 0, 92, 0.393);
+  transition: 0.3s;
+}
+
+
+.cardPoke > p {
+  font-weight: bold;
+  font-family:  system-uiv, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  justify-self: center;
+}
+
+.cardPoke > .pokeID {
+  color: white;
+  justify-self: baseline;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 8px;
+  background: linear-gradient(40deg, rgb(184, 160, 255), rgb(0, 166, 192));
+}
+
+.types {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.normal {
+  background: linear-gradient(40deg, #30cbee, #191f27);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+.fire {
+  background: linear-gradient(40deg, #EE8130, #FF0000);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Water (Agua) */
+.water {
+  background: linear-gradient(40deg, #6390F0, #0077BE);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Grass (Planta) */
+.grass {
+  background: linear-gradient(40deg, #314e21, #008000);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Electric (Eléctrico) */
+.electric {
+  background: linear-gradient(40deg, #F7D02C, #514400);
+  color: black;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Ice (Hielo) */
+.ice {
+  background: linear-gradient(40deg, #96D9D6, #00FFFF);
+  color: black;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Fighting (Lucha) */
+.fighting {
+  background: linear-gradient(40deg, #C22E28, #FF0000);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Poison (Veneno) */
+.poison {
+  background: linear-gradient(40deg, #7d007b, #8A2BE2);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+.fairy {
+  background: linear-gradient(40deg, #fe00a5, #00FFFF);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+.bug {
+  background: linear-gradient(40deg, #00170d, #007f1e);
+  color: white;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Ground (Tierra) */
+.ground {
+  background: linear-gradient(40deg, #E2BF65, #8B4513);
+  color: black;
+  padding: 5px;
+  border-radius: 10px
+}
+
+/* Clase para tipo Flying (Volador) */
+.flying {
+  background: linear-gradient(40deg, #efeaff, #1E90FF);
+  color: black;
+  padding: 5px;
+  border-radius: 10px
+}
+
+.pokeDataCont {
+  display: grid;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.pokemon-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+
+.pokeDataCont > h2 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  width: 1000px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.pokedetaCont > section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.pokedetaCont > section > button {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border-style: groove;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pokedetaCont > section > button:hover {
+  transform: scale(1.3);
+}
+
+.pokedetaCont > section > img {
+  width: 300px;
+  background-color: rgba(46, 0, 92, 0.393);
+  border-radius: 100%;
+}
+
+.pokedetaCont > h4 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pokeDetails {
+  display: grid;
+  grid-template-columns: 80px 200px 60px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+main > h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  
+}
